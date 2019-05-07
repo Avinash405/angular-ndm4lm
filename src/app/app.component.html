@@ -1,0 +1,23 @@
+
+<p><appUICSSDirective>Employee Details</appUICSSDirective></p>
+<p>Employee Details</p>
+<div *ngIf="showOrNoShow">
+<table border=1>
+  <thead>
+  <tr>
+    <th>EmpID</th>
+    <th>EmpName</th>
+     <th>Location</th>
+  </tr>
+</thead>
+  <tbody>
+   <tr *ngFor='let employee of employees'> 
+    <td>{{employee.EmpID}}</td>
+     <td>{{employee.EmpName}}</td> 
+     <td>{{employee.Location}}</td>
+   </tr>
+  </tbody>
+</table>
+</div>
+<br>
+<input type="button" name="Show" value="Show" (click)="Displaydata($event)">
