@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { AppDirectiveDirective } from './app-directive.directive';
+import { EmpDetailsPipe } from './emp-details.pipe';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent,  AppDirectiveDirective ],
+  declarations: [ AppComponent,  AppDirectiveDirective, EmpDetailsPipe ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

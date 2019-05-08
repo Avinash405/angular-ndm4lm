@@ -17,6 +17,17 @@ export class AppComponent  {
     Location:"Guntur"},
   ];
   
+  employeesforPipe:Object[]=[
+    {EmpName:"Avinash",
+    Age:28,
+    },
+    {EmpName:"Esarajula",
+    Age:28,
+    },
+    {EmpName:"Aarush",
+    Age:2
+    },
+  ];
  Displaydata(event) {   
       this.showOrNoShow=!this.showOrNoShow;
       
