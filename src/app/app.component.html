@@ -13,8 +13,8 @@
   <tbody>
    <tr *ngFor='let employee of employees'> 
     <td>{{employee.EmpID}}</td>
-     <td>{{employee.EmpName}}</td> 
-     <td>{{employee.Location}}</td>
+     <td>{{employee.EmpName|uppercase}}</td> 
+     <td>{{employee.Location|lowercase}}</td>
    </tr>
   </tbody>
 </table>
@@ -22,4 +22,4 @@
 <br>
 <input type="button" name="Show" value="Show" (click)="Displaydata($event)">
 
-<div *ngFor='let item of employeesforPipe'>{{item.EmpID}}</div>
+<div *ngFor='let item of employeesforPipe'>{{item.Age}}-{{item.EmpName|empDetails}}</div>
